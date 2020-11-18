@@ -1,0 +1,85 @@
+h1{
+	margin: auto;
+	padding: 0;
+	border: 40%;
+	font-size: 5em;
+	text-align: center;
+	top: 300px;
+}
+
+a{
+	color: white;
+	margin-top: 500px;
+}
+
+body
+{
+    perspective: 800px;
+    background-color: rgb(30,30,30);
+	color: white;
+}
+
+div
+{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+    left: 35%;
+    opacity: 0.5;
+    border: 2px solid #444;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: arial, sans-serif;
+    transition: 2s;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+#faceUn
+{
+    z-index: 100;
+    background-image: linear-gradient(white, orange);
+}
+
+#faceDeux
+{
+    z-index: 50;
+    background-image: linear-gradient(green, red);
+    transform: rotateY(-90deg); /* retourné par défaut */
+}
+
+#faceUn:hover
+{
+    transform: rotateY(180deg); /* On passe de 0 à 180° : tour complet */
+}
+
+
+#faceUn:hover + #faceDeux
+{
+    transform: rotateY(90deg);  /* On passe de -90° à 90° : tour complet */
+}
+
+/****/
+
+#faceTrois
+{
+    z-index: 50;
+    background-image: linear-gradient(white, blue);
+}
+
+#faceQuatre
+{
+    z-index: 25;
+    background-image: linear-gradient(green, pink);
+    transform: rotateY(-90deg); /* Celui-ci est retourné par défaut */
+}
+
+#faceTrois:hover
+{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+#faceTrois:hover + #faceQuatre
+{
+    transform: rotateY(90deg);  /* On passe de -90° à 90° : tour complet */
+}
