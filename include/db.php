@@ -13,9 +13,9 @@ CREATE TABLE `creationsyorick.fr`.`user` ( `id` INT NULL AUTO_INCREMENT , `usern
 **/
 
 define('DB_HOST', 'creationsyorick.fr');
-define('DB_NAME', 'creat1451171');
-define('DB_LOGIN', 'creat1451171');
-define('DB_PASSWORD', 'fvgbffhvbc');
+define('DB_NAME', 'dbName');
+define('DB_LOGIN', 'dbLogin');
+define('DB_PASSWORD', 'dbPWD');
 
 /**dns nécessaire pour PDO (mysql)**/
 define('DNS_MYSQL', 'mysql:host='.DB_HOST.';dbname='.DB_NAME);
